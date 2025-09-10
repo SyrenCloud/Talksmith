@@ -55,7 +55,7 @@ Before deployment, ensure you have:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/talksmith.git
+git clone https://github.com/SyrenCloud/Talksmith.git
 cd talksmith
 ```
 
