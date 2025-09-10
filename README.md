@@ -49,7 +49,7 @@ Before deployment, ensure you have:
 - **Python** 3.9+
 - **OpenAI API Key** with GPT-5 access
 - **Windows/Linux/macOS** environment
-- **8GB+ RAM** recommended
+- **8GB+ RAM** (recommended)
 
 ## 🚀 Quick Start
 
