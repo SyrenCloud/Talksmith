@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply text-gray-800 font-semibold;
+  }
+  
+  .chat-message {
+    @apply rounded-2xl px-5 py-3 break-words shadow-sm;
+  }
+  
+  .user-message {
+    @apply bg-blue-600 text-white ml-auto max-w-fit shadow-md hover:bg-blue-700 transition-all duration-200;
+  }
+  
+  .bot-message {
+    @apply bg-white text-gray-800 mr-auto max-w-full shadow-md border border-gray-200 hover:shadow-lg transition-all duration-200;
+  }
+  
+  .upload-area {
+    @apply border-2 border-dashed border-gray-300 rounded-lg p-6 text-center transition-all duration-200 hover:border-blue-400 hover:bg-blue-50/50 cursor-pointer;
+  }
+  
+  .document-item {
+    @apply bg-white border border-gray-200 rounded-lg p-3 flex items-center justify-between hover:bg-gray-50 hover:shadow-sm transition-all duration-150;
+  }
+  
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #d1d5db #f9fafb;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400;
+  }
+  
+  /* Modern UI Enhancements */
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg px-4 py-2.5 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200;
+  }
+  
+  .input-field {
+    @apply bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 hover:border-gray-400;
+  }
+  
+  /* Smooth animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  /* Typing indicator dots animation */
+  @keyframes typing {
+    0%, 60%, 100% {
+      transform: translateY(0);
+      opacity: 0.7;
+    }
+    30% {
+      transform: translateY(-15px);
+      opacity: 1;
+    }
+  }
+  
+  .typing-dot {
+    @apply w-2 h-2 bg-gray-500 rounded-full inline-block mx-0.5;
+    animation: typing 1.4s infinite ease-in-out;
+  }
+  
+  .typing-dot:nth-child(1) {
+    animation-delay: -0.32s;
+  }
+  
+  .typing-dot:nth-child(2) {
+    animation-delay: -0.16s;
+  }
+  
+  .typing-dot:nth-child(3) {
+    animation-delay: 0;
+  }
+  
+  /* Professional focus states */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+  }
+  
+  /* Better button states */
+  button:active {
+    @apply transform scale-95;
+  }
+  
+  /* Improved transitions */
+  * {
+    @apply transition-colors duration-200;
+  }
+}
